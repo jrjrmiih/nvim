@@ -20,13 +20,6 @@ nnoremap <leader>ss :setlocal spell! spelllang=en_us<CR>
 
 autocmd FileType python nnoremap <buffer> <leader>r :w<CR>:!python3 % <CR>
 
-" Plugin denite.
-nnoremap <leader>uf :Denite -no-empty -mode=normal file<CR>
-nnoremap <leader>ur :Denite -no-empty file/rec<CR>
-nnoremap <leader>um :Denite -no-empty file_mru<CR>
-nnoremap <leader>ub :Denite -no-empty -mode=normal buffer<CR>
-nnoremap <leader>ul :Denite -no-empty -mode=normal line<CR>
-nnoremap <leader>ug :Denite -mode=normal grep<CR>
 " Plugin youcompleteme
 nnoremap <leader>d :YcmCompleter GoToDefinitionElseDeclaration<CR>
 " Plugin auto-format
@@ -40,6 +33,13 @@ nnoremap <leader>gm :LivedownToggle<CR>
 " Plugin quick-run
 "nnoremap <leader>r :QuickRun<CR>                                " By default
 
+" Plugin denite.
+nnoremap <leader>uf :Denite -no-empty -mode=normal file<CR>
+nnoremap <leader>ur :Denite -no-empty file/rec<CR>
+nnoremap <leader>um :Denite -no-empty file_mru<CR>
+nnoremap <leader>ub :Denite -no-empty -mode=normal buffer<CR>
+nnoremap <leader>ul :Denite -no-empty -mode=normal line<CR>
+nnoremap <leader>ug :Denite -mode=normal grep<CR>
 " Plugin vim-easy-align
 " usage: VISUAL MODE/vipga=/gaip=
 nmap ga <Plug>(EasyAlign)

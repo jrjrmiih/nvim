@@ -4,6 +4,7 @@ Plug 'drewtempelmeyer/palenight.vim'  " vim color theme.
 Plug 'https://github.com/vim-scripts/fcitx.vim.git'         " Keep fcitx status.
 Plug 'Shougo/denite.nvim', { 'do': ':UpdateRemotePlugins' } " Denite.
 Plug 'Shougo/neomru.vim'              " cache most recently used files.
+Plug 'Shougo/defx.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'Shougo/deoplete-clangx'         " auto complete for clang family, used by deoplete.
 Plug 'scrooloose/nerdtree'            " NerdTree.

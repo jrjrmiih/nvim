@@ -7,7 +7,7 @@ call denite#custom#var('grep', 'separator', ['--'])
 call denite#custom#var('grep', 'final_opts', [])
 
 " Ignore pattern for matcher.
-call denite#custom#var('file_rec', 'command', ['rg', '--files', '--glob', '!.git', ''])
+call denite#custom#var('file/rec', 'command', ['rg', '--files', '--glob', '!.git'])
 
-" Match substring search in file_rec list.
-call denite#custom#source('file_rec', 'matchers', ['matcher_substring'])
+" Match substring search in file/rec list.
+call denite#custom#source('file/rec', 'matchers', ['matcher/substring'])
