@@ -6,6 +6,7 @@ Plug 'Shougo/denite.nvim', { 'do': ':UpdateRemotePlugins' } " Denite.
 Plug 'Shougo/neomru.vim'              " cache most recently used files.
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'Shougo/deoplete-clangx'         " auto complete for clang family, used by deoplete.
+Plug 'scrooloose/nerdtree'            " NerdTree.
 Plug 'vim-scripts/taglist.vim'        " Taglist.
 Plug 'jiangmiao/auto-pairs'           " highlight paired brackets.
 Plug 'junegunn/vim-easy-align'        " alignment for single character.

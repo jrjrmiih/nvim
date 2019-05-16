@@ -50,3 +50,5 @@ map <leader>/ <Plug>NERDCommenterToggle
 map <F3> :call CurtineIncSw()<CR>
 " plugin plantuml-syntax
 map <F5> <ESC>:w<CR> :make<CR>
+" plugin nerdtree
+map <F2> :NERDTreeToggle<CR>
