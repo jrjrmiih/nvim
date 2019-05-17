@@ -2,12 +2,11 @@
 call plug#begin()
 Plug 'drewtempelmeyer/palenight.vim'  " vim color theme.
 Plug 'https://github.com/vim-scripts/fcitx.vim.git'         " Keep fcitx status.
+Plug 'Shougo/defx.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'Shougo/denite.nvim', { 'do': ':UpdateRemotePlugins' } " Denite.
 Plug 'Shougo/neomru.vim'              " cache most recently used files.
-Plug 'Shougo/defx.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'Shougo/deoplete-clangx'         " auto complete for clang family, used by deoplete.
-Plug 'scrooloose/nerdtree'            " NerdTree.
 Plug 'vim-scripts/taglist.vim'        " Taglist.
 Plug 'jiangmiao/auto-pairs'           " highlight paired brackets.
 Plug 'junegunn/vim-easy-align'        " alignment for single character.
@@ -17,6 +16,7 @@ Plug 'scrooloose/nerdcommenter'       " code comment.
 Plug 'ericcurtin/CurtineIncSw.vim'    " switch between header and source.
 Plug 'sbdchd/neoformat'               " auto format.
 Plug 'aklt/plantuml-syntax'           " PlantUml.
+Plug 'shime/vim-livedown'             " markdown local server.
 call plug#end()
 
 " config settings for plugins.
@@ -25,6 +25,7 @@ source ~/.config/nvim/config/denite.nvimrc
 source ~/.config/nvim/config/deoplete.nvimrc
 source ~/.config/nvim/config/deoplete-clangx.nvimrc
 source ~/.config/nvim/config/auto-pairs.nvimrc
+source ~/.config/nvim/config/neoformat.nvimrc
 source ~/.config/nvim/config/plantuml-syntax.nvimrc
 source ~/.config/nvim/config/shortcut.nvimrc
 
