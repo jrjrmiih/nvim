@@ -24,6 +24,7 @@ source ~/.config/nvim/config/palenight.nvimrc
 source ~/.config/nvim/config/denite.nvimrc
 source ~/.config/nvim/config/deoplete.nvimrc
 source ~/.config/nvim/config/deoplete-clangx.nvimrc
+source ~/.config/nvim/config/taglist.nvimrc
 source ~/.config/nvim/config/auto-pairs.nvimrc
 source ~/.config/nvim/config/neoformat.nvimrc
 source ~/.config/nvim/config/plantuml-syntax.nvimrc

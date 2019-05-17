@@ -17,7 +17,7 @@ nnoremap <leader>wh+ :resize +10<CR>
 nnoremap <leader>ss :setlocal spell! spelllang=en_us<CR>
 
 " plugin defx.
-nnoremap <leader>f <Esc>:Defx -split=vertical -winwidth=30 -direction=topleft<CR>
+nnoremap <leader>f <Esc>:Defx -split=vertical -winwidth=35 -direction=topleft<CR>
 autocmd FileType defx call s:defx_my_settings()
 function! s:defx_my_settings() abort
     nnoremap <silent><buffer><expr> <CR> defx#do_action('drop')
