@@ -1,0 +1,7 @@
+#!/bin/bash
+java -jar ~/.config/nvim/tools/plantuml.jar -tpng $@
+if [ "$(uname)" == "Darwin" ]; then
+    open ${@%%.*}.png
+elif [ "$(expr substr $(uname -s) 1 5)" == "Linux" ]; then
+    display ${@%%.*}.png
+fi
