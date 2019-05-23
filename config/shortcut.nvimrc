@@ -43,6 +43,8 @@ nnoremap <leader>um :Denite -no-empty file_mru<CR>
 nnoremap <leader>ub :Denite -no-empty -mode=normal buffer<CR>
 nnoremap <leader>ul :Denite -no-empty -mode=normal line<CR>
 nnoremap <leader>ug :Denite -mode=normal grep<CR>
+" plugin deoplete.
+inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
 " plugin taglist
 nnoremap <leader>t :TlistToggle<CR>
 " plugin vim-easy-align

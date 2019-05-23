@@ -1,22 +1,23 @@
 " plugin manager: junegunn/vim-plug
 call plug#begin()
-Plug 'drewtempelmeyer/palenight.vim'  " vim color theme.
-Plug 'https://github.com/vim-scripts/fcitx.vim.git'         " Keep fcitx status.
+Plug 'drewtempelmeyer/palenight.vim'                " vim color theme.
+Plug 'https://github.com/vim-scripts/fcitx.vim.git' " Keep fcitx status.
 Plug 'Shougo/defx.nvim', { 'do': ':UpdateRemotePlugins' }
-Plug 'Shougo/denite.nvim', { 'do': ':UpdateRemotePlugins' } " Denite.
-Plug 'Shougo/neomru.vim'              " cache most recently used files.
+Plug 'Shougo/denite.nvim', { 'do': ':UpdateRemotePlugins' }
+Plug 'Shougo/neomru.vim'                            " cache most recently used files.
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
-Plug 'Shougo/deoplete-clangx'         " auto complete for clang family, used by deoplete.
-Plug 'vim-scripts/taglist.vim'        " Taglist.
-Plug 'jiangmiao/auto-pairs'           " highlight paired brackets.
-Plug 'junegunn/vim-easy-align'        " alignment for single character.
-Plug 'vim-airline/vim-airline'        " status bar.
-Plug 'vim-airline/vim-airline-themes' " status bar themes.
-Plug 'scrooloose/nerdcommenter'       " code comment.
-Plug 'ericcurtin/CurtineIncSw.vim'    " switch between header and source.
-Plug 'sbdchd/neoformat'               " auto format.
-Plug 'aklt/plantuml-syntax'           " PlantUml.
-Plug 'shime/vim-livedown'             " markdown local server.
+Plug 'Shougo/deoplete-clangx'                       " auto complete for clang family, used by deoplete.
+Plug 'vim-scripts/taglist.vim'                      " Taglist.
+Plug 'jiangmiao/auto-pairs'                         " highlight paired brackets.
+Plug 'junegunn/vim-easy-align'                      " alignment for single character.
+Plug 'vim-airline/vim-airline'                      " status bar.
+Plug 'vim-airline/vim-airline-themes'               " status bar themes.
+Plug 'scrooloose/nerdcommenter'                     " code comment.
+Plug 'ericcurtin/CurtineIncSw.vim'                  " switch between header and source.
+Plug 'sbdchd/neoformat'                             " auto format.
+Plug 'octol/vim-cpp-enhanced-highlight'             " cpp syntax highlighting.
+Plug 'aklt/plantuml-syntax'                         " PlantUml.
+Plug 'shime/vim-livedown'                           " markdown local server.
 call plug#end()
 
 " config settings for plugins.
