@@ -38,12 +38,12 @@ function! s:defx_my_settings() abort
     nnoremap <silent><buffer><expr> q defx#do_action('quit')
 endfunction
 " plugin denite.
-nnoremap <leader>uf :Denite -no-empty -mode=normal file<CR>
+nnoremap <leader>uf :Denite -no-empty file<CR>
 nnoremap <leader>ur :Denite -no-empty file/rec<CR>
 nnoremap <leader>um :Denite -no-empty file_mru<CR>
-nnoremap <leader>ub :Denite -no-empty -mode=normal buffer<CR>
-nnoremap <leader>ul :Denite -no-empty -mode=normal line<CR>
-nnoremap <leader>ug :Denite -mode=normal grep<CR>
+nnoremap <leader>ub :Denite -no-empty buffer<CR>
+nnoremap <leader>ul :Denite -no-empty line<CR>
+nnoremap <leader>ug :Denite grep<CR>
 " plugin deoplete.
 inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
 " plugin taglist
