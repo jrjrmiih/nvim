@@ -20,6 +20,8 @@ Plug 'aklt/plantuml-syntax'                         " PlantUml.
 Plug 'shime/vim-livedown'                           " markdown local server.
 call plug#end()
 
+" use <C-A><C-C><C-V> as default function keys.
+source ~/.config/nvim/config/mswin.vim
 " config settings for plugins.
 source ~/.config/nvim/config/palenight.nvimrc
 source ~/.config/nvim/config/denite.nvimrc
@@ -53,3 +55,4 @@ set scrolloff=3
 set nowrap
 set noswapfile
 set ignorecase smartcase
+
