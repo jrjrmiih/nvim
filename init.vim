@@ -18,6 +18,7 @@ Plug 'sbdchd/neoformat'                             " auto format.
 Plug 'octol/vim-cpp-enhanced-highlight'             " cpp syntax highlighting.
 Plug 'aklt/plantuml-syntax'                         " PlantUml.
 Plug 'shime/vim-livedown'                           " markdown local server.
+Plug 'easymotion/vim-easymotion'                           " markdown local server.
 call plug#end()
 
 " use <C-A><C-C><C-V> as default function keys.
