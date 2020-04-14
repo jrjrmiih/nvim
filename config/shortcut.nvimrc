@@ -72,4 +72,4 @@ nnoremap <leader>gp :w<CR> :make<CR>
 " plugin vim-livedown
 nnoremap <leader>gm :LivedownToggle<CR>
 " plugin vim-easymotion
-map  / <Plug>(easymotion-sn)
+map <leader><leader>/ <Plug>(easymotion-sn)

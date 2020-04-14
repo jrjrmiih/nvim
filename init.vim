@@ -18,11 +18,13 @@ Plug 'sbdchd/neoformat'                             " auto format.
 Plug 'octol/vim-cpp-enhanced-highlight'             " cpp syntax highlighting.
 Plug 'aklt/plantuml-syntax'                         " PlantUml.
 Plug 'shime/vim-livedown'                           " markdown local server.
-Plug 'easymotion/vim-easymotion'                           " markdown local server.
+Plug 'easymotion/vim-easymotion'
+Plug 'beeender/Comrade'
+Plug 'luochen1990/rainbow'
 call plug#end()
 
 " use <C-A><C-C><C-V> as default function keys.
-source ~/.config/nvim/config/mswin.vim
+"source ~/.config/nvim/config/mswin.vim
 " config settings for plugins.
 source ~/.config/nvim/config/palenight.nvimrc
 source ~/.config/nvim/config/denite.nvimrc
@@ -32,6 +34,7 @@ source ~/.config/nvim/config/taglist.nvimrc
 source ~/.config/nvim/config/auto-pairs.nvimrc
 source ~/.config/nvim/config/neoformat.nvimrc
 source ~/.config/nvim/config/plantuml-syntax.nvimrc
+source ~/.config/nvim/config/rainbow.nvimrc
 source ~/.config/nvim/config/shortcut.nvimrc
 
 autocmd FileType help setlocal number " let the help doc shown with line number.
@@ -44,7 +47,7 @@ set number
 set relativenumber
 set cursorline
 set hlsearch
-set list listchars=extends:❯,precedes:❮,tab:▸\ ,trail:˽
+set list listchars=extends:❯,precedes:❮,tab:▸\ ,trail:~
 " control settings.
 set clipboard+=unnamedplus
 set mouse=a
@@ -56,4 +59,6 @@ set scrolloff=3
 set nowrap
 set noswapfile
 set ignorecase smartcase
+set smartindent
 
+highlight CursorLine guibg=#303000 ctermbg=234
