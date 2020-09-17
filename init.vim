@@ -21,6 +21,7 @@ Plug 'shime/vim-livedown'                           " markdown local server.
 Plug 'easymotion/vim-easymotion'
 Plug 'beeender/Comrade'
 Plug 'luochen1990/rainbow'
+Plug 'dart-lang/dart-vim-plugin'                    " Dart highlight.
 call plug#end()
 
 " use <C-A><C-C><C-V> as default function keys.
@@ -44,7 +45,6 @@ syntax on
 set background=dark
 colorschem palenight
 set number
-set relativenumber
 set cursorline
 set hlsearch
 set list listchars=extends:❯,precedes:❮,tab:▸\ ,trail:~
