@@ -1,0 +1,7 @@
+{
+  "hosts": {
+    "https://pha.rongcloud.net/api/": {
+      "token": "cli-wy4nraqwhsyojer2kyhzcccjqjqh"
+    }
+  }
+}

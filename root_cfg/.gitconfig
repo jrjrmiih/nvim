@@ -1,0 +1,32 @@
+[core]
+	excludesfile = /Users/zhanglei/.gitignore_global
+	# editor = /opt/homebrew/bin/nvim
+	editor = /usr/bin/vim
+	quotepath = false
+[diff]
+	tool = bcomp
+[difftool]
+	prompt = false
+[difftool "bcomp"]
+	cmd = bcomp \"$LOCAL\" \"$REMOTE\"
+[merge]
+	tool = bcomp
+[mergetool]
+	bcomp = trustExitCode
+[mergetool "bcomp"]
+	cmd = bcomp \"$LOCAL\" \"$REMOTE\" \"$BASE\" \"$MERGED\"
+	trustExitCode = true
+[alias]
+	logtree = log --graph --all --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+[push]
+	default = simple
+[pull]
+	rebase = true
+[user]
+	email = zhanglei1@rongcloud.cn
+	name = zhanglei1
+[filter "lfs"]
+	required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
