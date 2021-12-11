@@ -60,5 +60,5 @@ set nowrap
 set noswapfile
 set ignorecase smartcase
 set smartindent
-
+" hight current lines
 highlight CursorLine guibg=#303000 ctermbg=234
