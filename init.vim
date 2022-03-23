@@ -19,13 +19,12 @@ Plug 'octol/vim-cpp-enhanced-highlight'             " cpp syntax highlighting.
 Plug 'aklt/plantuml-syntax'                         " PlantUml.
 Plug 'shime/vim-livedown'                           " markdown local server.
 Plug 'easymotion/vim-easymotion'
-Plug 'beeender/Comrade'
 Plug 'luochen1990/rainbow'
 Plug 'dart-lang/dart-vim-plugin'                    " Dart highlight.
 call plug#end()
 
 " use <C-A><C-C><C-V> as default function keys.
-"source ~/.config/nvim/config/mswin.vim
+source ~/.config/nvim/config/mswin.vim
 " config settings for plugins.
 source ~/.config/nvim/config/palenight.nvimrc
 source ~/.config/nvim/config/denite.nvimrc
@@ -60,5 +59,16 @@ set nowrap
 set noswapfile
 set ignorecase smartcase
 set smartindent
+
 " hight current lines
 highlight CursorLine guibg=#303000 ctermbg=234
+
+" show trailing whitespace
+highlight TrailingWhitespace ctermbg=red guibg=red
+call matchadd("TrailingWhitespace", '\v\s+$')
+
+" highlight copy item
+augroup highlight_yank
+    autocmd!
+    au TextYankPost * silent! lua vim.highlight.on_yank{higroup="IncSearch", timeout=700}
+augroup END
